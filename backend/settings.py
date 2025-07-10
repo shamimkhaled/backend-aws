@@ -121,6 +121,11 @@ STATICFILES_DIRS = [
 ]
 
 
+# WhiteNoise configuration for better static file serving
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
 
 # URL to access media files (e.g., user uploads)
 MEDIA_URL = '/media/'
